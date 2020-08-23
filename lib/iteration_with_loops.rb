@@ -3,13 +3,15 @@ def find_min_in_nested_arrays(src)
     min_num = []
     while count < src.count do
         incount = 0
+        num = 1000
         while incount < src[count].count do
-            if min_num > src[count][incount]
-                min_num.push(src[count][incount])
+            if num > src[count][incount]
+                num = (src[count][incount])
             end
             incount += 1
         end
         count += 1
+        min_num.push(num)
     end
-    puts min_num
+    min_num
 end

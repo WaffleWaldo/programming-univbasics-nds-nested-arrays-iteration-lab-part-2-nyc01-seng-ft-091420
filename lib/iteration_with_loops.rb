@@ -12,6 +12,6 @@ def find_min_in_nested_arrays(src)
             incount += 1
         end
         count += 1
-        puts min_num
+        p min_num
     end
 end
